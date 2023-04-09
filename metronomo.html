@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BeatKey Project - Metrônomo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <li> <a href="index.html"> BeatKey Project </a></li>
+    </h1>
+    <nav>
+      <a href="treinos.html">Treinos</a>
+    </nav>
+  </header>
+
+  <main class="mainmetronome">
+    <div class="metronome-container">
+      <div class="tempo">
+        <h2>Tempo:</h2>
+        <input type="number" id="tempo" min="20" max="240" step="1" value="120">
+        <label for="tempo">BPM</label>
+      </div>
+      <div class="start-stop">
+        <button id="start-stop-btn" class="start">Iniciar</button>
+      </div>
+      <div class="beats-per-measure">
+        <h2>Compasso:</h2>
+        <button id="beats-per-measure-2-btn" class="selected">2/4</button>
+        <button id="beats-per-measure-3-btn">3/4</button>
+        <button id="beats-per-measure-4-btn">4/4</button>
+      </div>
+      <div class="accent">
+        <h2>Acêntuo:</h2>
+        <button id="accent-btn" class="selected">1º Tempo</button>
+        <button id="no-accent-btn">Sem Acêntuo</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </main>
+</body>
+
+</html>
