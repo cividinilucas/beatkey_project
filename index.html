@@ -21,14 +21,64 @@
 
 	<main>
 		<h2>Seja bem-vindo(a) ao BeatKey Project!</h2>
-        <h3>  </h3>
+        <h3> </h3>
 		<p> </p>
 		<p>Este é um site projetado para ajudar músicos a treinar e desenvolver habilidades rítmicas. Com as ferramentas disponíveis aqui, você poderá criar e salvar seus próprios treinos e também utilizar um metrônomo para manter o tempo.</p>
+		<div id="frases"></div>
+		
 	</main>
+	
 
 	<footer>
 		<p>BeatKey Project &copy; 2023 - Todos os direitos reservados.</p>
 	</footer>
+	<script>
+		//Funcao das frases aleatorias
 
+//Funcao das frases aleatorias
+
+const frases = [
+  "A música é o que sentimentos soam como.",
+  "A prática leva à perfeição.",
+  "A música é a linguagem universal que todos podem entender.",
+  "Cada nota que você toca é uma oportunidade de criar algo bonito.",
+  "Você não pode esperar ser um grande guitarrista se não se esforçar para isso.",
+  "A música é a arte de pensar com sons.",
+  "Cada acorde que você toca é uma história que está sendo contada.",
+  "Não há nada mais gratificante do que ver a multidão cantando junto com sua música.",
+  "A música é a vida em movimento.",
+  "A guitarra é uma extensão do seu coração e alma. Toque com paixão e deixe sua música falar por si só."
+];
+
+let fraseAtual = '';
+let indiceAtual = -1;
+
+function exibirFrases() {
+  const proximaFrase = () => {
+    indiceAtual = (indiceAtual + 1) % frases.length;
+    fraseAtual = frases[indiceAtual];
+    const divFrase = document.getElementById("frases");
+    divFrase.innerHTML = '';
+    digitarFrase(fraseAtual);
+  };
+  setTimeout(proximaFrase, 3000);
+}
+
+function digitarFrase(frase) {
+  let i = 0;
+  const divFrase = document.getElementById("frases");
+  const intervalId = setInterval(() => {
+    divFrase.innerHTML += frase.charAt(i);
+    i++;
+    if (i > frase.length - 1) {
+      clearInterval(intervalId);
+    }
+  }, 100);
+}
+
+exibirFrases();
+setInterval(exibirFrases, 5000);
+
+	</script>
 </body>
 </html>

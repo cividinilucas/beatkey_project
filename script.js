@@ -73,3 +73,8 @@ document.getElementById('no-accent-btn').addEventListener('click', function() {
   alert('Sem acêntuo selecionado');
 });
 document.getElementById('save').addEventListener('click', saveWorkout);
+
+
+
+
+

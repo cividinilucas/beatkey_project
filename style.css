@@ -7,6 +7,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@1,300&display=swap');
 
 body {
   background-color: black;
@@ -84,6 +85,14 @@ h2 {
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
+}
+#frases {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: 'Merriweather', serif;
+
+
 }
 
 section h2 {
