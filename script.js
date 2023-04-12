@@ -1,4 +1,3 @@
-
 let bpm = 120; 
 let playing = false; 
 let timer = null; 
@@ -73,8 +72,4 @@ document.getElementById('no-accent-btn').addEventListener('click', function() {
   alert('Sem acêntuo selecionado');
 });
 document.getElementById('save').addEventListener('click', saveWorkout);
-
-
-
-
 

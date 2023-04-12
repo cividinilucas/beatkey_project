@@ -145,8 +145,31 @@ form button[type="submit"]:hover {
     justify-content: center;
     height: 100vh;
     align-items: center;
+    user-select: none;
   }
-  
+
+ 
+.bpmquant{
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  border-radius: 5px;
+  padding: 0.2em 0.1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em 0.5em rgba(15, 11, 11, 0.2);
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-right: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
   .metronome-container {
     gap: 15px;
     background-color: #423d3d;
